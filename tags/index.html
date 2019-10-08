@@ -231,6 +231,53 @@ Running a service in the foreground
                     <div class="container">
                         <div class="columns">
                         <div class="column is-centered-tablet-portrait">
+                            <h1 class="title section-title">EE Stuff</h1>
+                            <h5 class="subtitle is-5 is-muted"></h5>
+                            <div class="divider"></div>        
+                            <div class="section">
+                            <div class="container">
+                                <div class="columns"></div>
+                                        <div class="columns"><div class="column is-4">
+    <div class="box">
+      <figure class="image is-3by2">
+        <a href="/post/compulsory/"><img src="/images/default_summary_huf9e8951c3521e8dfaa05ae09a282bc27_276881_600x0_resize_q75_box.jpg" alt=""></a>
+      </figure>
+      <h3 class="title is-5 summary-title">
+        直方图的强迫
+      </h3>
+      <p class="summary-summary">背景 今天《数字图像处理》课上讲了直方图均衡，由于种种原因，我产生了一种强迫性的行为：我要尽可能严谨地讲清楚直方图均衡的来龙去脉，在做到这点之前，我十分痛苦。下面讲的就是我强迫性的行为所带来的“收获”
+我的强迫  直方图的概念  直方图
+什么是直方图均衡，为何要这样做  直方图均衡是一种图像“变换”，直观的看，变换后图像的直方图变成了一个在整个定义域上常函数。维基说：
+ 这种方法通常用来增加许多图像的全局对比度，尤其是当图像的有用数据的对比度相当接近的时候。通过这种方法，亮度可以更好地在直方图上分布。这样就可以用于增强局部的对比度而不影响整体的对比度，直方图均衡化通过有效地扩展常用的亮度来实现这种功能。
+这种方法对于背景和前景都太亮或者太暗的图像非常有用，这种方法尤其是可以带来X光图像中更好的骨骼结构显示以及曝光过度或者曝光不足照片中更好的细节。这种方法的一个主要优势是它是一个相当直观的技术并且是可逆操作，如果已知均衡化函数，那么就可以恢复原始的直方图，并且计算量也不大。这种方法的一个缺点是它对处理的数据不加选择，它可能会增加背景噪声的对比度并且降低有用信号的对比度。
+ 至于直方图是如何达到这种效果的，在比较清楚地了解了其背后的原理后再进行讨论。总之，我们要做的是找到一个变换 \(T(x)\) 使得变换后的\(T(image)\) 的直方图是一个常函数\(f(rank) = K\) , \(\forall\)\(rank\) \(\in\) \(RankDomain\)
+如何找到这样的一个变换\(T(x)\)  根据一些图像处理的知识，变换\(T(x)\) 需要满足以下一些条件：
+（i）\(T(x)\)是广义单调增加的。这保证像素之间灰度级的大小关系保持不变。
+下面引入概率论的思想来求这个变换。将像素点\(i\)的灰度值视为一个随机变量\(\xi_i\)，
+\[\xi_i \coprod \xi_j ， \forall i\ne j ， i, j \in Image\]
+定义概率\(P(\xi = k)\) = \(\frac{n_k}{n}\)
+\(n_k\) \(:=\) 灰度为\(k\)的像素点的个数
+\(n:=\) 图像总像素点个数
+ 弃更了，google到一篇很清楚的解释，数学也比较严谨在这里
+会搜索是多么重要，\(Gan\)。
+(提高hugo对markdown数学公式的支持请看这里)
+</p> 
+      <div class="action has-text-right">
+        <a href="/post/compulsory/" class="button is-primary">
+                Read More
+            </a>
+      </div>
+    </div>
+  </div></div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section><section class="section">
+                    <div class="container">
+                        <div class="columns">
+                        <div class="column is-centered-tablet-portrait">
                             <h1 class="title section-title">Ladder</h1>
                             <h5 class="subtitle is-5 is-muted"></h5>
                             <div class="divider"></div>        
@@ -393,6 +440,7 @@ AndroidStudio不仅给出错误原因，在原因下面就给出了一键解决�
 
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
 </footer>
     <div id="backtotop"><a href="#"></a></div><div class="sidebar">
   <div class="sidebar-header"><img src="/sidebar.svg" alt="">
@@ -461,6 +509,24 @@ AndroidStudio不仅给出错误原因，在原因下面就给出了一键解决�
               <table width="100%">  
                   <tr>
                     <td class=""><span class="icon"><i class="fa fa-cube"></i></span>Eat</td>
+                    <td class="has-text-right" >
+                        <div class="tag-number">1</div>
+                      
+                    </td>
+                    
+                  </tr>
+              </table>
+              
+            </div>
+          </a>
+      </li>
+      <li class="no-children">
+          <a href="/tags/ee-stuff">
+            <div class="columns">
+              
+              <table width="100%">  
+                  <tr>
+                    <td class=""><span class="icon"><i class="fa fa-cube"></i></span>EE Stuff</td>
                     <td class="has-text-right" >
                         <div class="tag-number">1</div>
                       
