@@ -117,62 +117,58 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">直方图的强迫</h1>
+        <h1 class="title is-2 section-title">1.1</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
         
         <section class="section content has-text-justified">
-          <h2 id="背景">背景</h2>
+          
 
-<p>今天《数字图像处理》课上讲了直方图均衡，由于种种原因，我产生了一种强迫性的行为：我要尽可能严谨地讲清楚直方图均衡的来龙去脉，在做到这点之前，我十分痛苦。下面讲的就是我强迫性的行为所带来的“收获”</p>
+<h3 id="我的前言">我的前言</h3>
 
-<h2 id="我的强迫">我的强迫</h2>
+<p>我认为我有充分的理由学习概率论。上次的compulsory期间，我借了一本精装的概率论书籍<a href="https://item.jd.com/12430075.html" target="_blank">概率论基础及其应用/王梓坤文集</a> 据说质量很高，因此这本书自然而然成了我“重修”概率论的参考书。我希望自己能坚持读完，并在此记一些笔记，一能督促自己的学习，二能总结出一些“自己想要的东西”。闲话少叙，这就开始了。</p>
 
-<ol>
-<li>直方图的概念</li>
-</ol>
+<h3 id="读前言">读前言</h3>
 
-<p><a href="https://zh.wikipedia.org/wiki/%E7%9B%B4%E6%96%B9%E5%9B%BE#%E5%BD%92%E4%B8%80%E5%8C%96%E7%9B%B4%E6%96%B9%E5%9B%BE">直方图</a></p>
-
-<ol start="2">
-<li>什么是直方图均衡，为何要这样做</li>
-</ol>
-
-<p>直方图均衡是一种图像“变换”，直观的看，变换后图像的直方图变成了一个在整个定义域上常函数。维基说：</p>
+<p>我不经常看书的前言（也不常看教材之外的书😄），但这本书包装如此精美，且是一本“文集”，我决定认真读书上的每一个字。前言讲了王梓坤先生读书科研的经历，和做出的种种贡献。王先生的投入之全心全意令人难以忽略。我能看到这样一个极其“单调”但是极其“伟大”的人。这可能就是一种balance吧，要想问心无愧地做出一些伟大的成果，就要牺牲一些东西 。当然先生也做了一些并不“单调”的工作：做校长、提议教师节、受任国家研究地震的预测……另外让我印象深刻的是他的“单调”是<a href="https://baike.baidu.com/item/%E4%BB%8E%E4%B8%80%E8%80%8C%E7%BB%88/83655" target="_blank">从一而终</a>的（又开始成语误用了），即使在&rdquo;文革&rdquo;期间，也潜心关注数学的发展动态。能感受到王先生对于数学的坚定是超越政治、经济等等外界环境的。就像他自勉用的格言所说：</p>
 
 <blockquote>
-<p>这种方法通常用来增加许多图像的全局<a href="https://zh.wikipedia.org/wiki/對比度">对比度</a>，尤其是当图像的有用数据的对比度相当接近的时候。通过这种方法，<a href="https://zh.wikipedia.org/wiki/亮度">亮度</a>可以更好地在直方图上分布。这样就可以用于增强局部的对比度而不影响整体的对比度，直方图均衡化通过有效地扩展常用的亮度来实现这种功能。</p>
-
-<p>这种方法对于背景和前景都太亮或者太暗的图像非常有用，这种方法尤其是可以带来<a href="https://zh.wikipedia.org/wiki/X光">X光</a>图像中更好的<a href="https://zh.wikipedia.org/wiki/骨骼">骨骼</a>结构显示以及曝光过度或者曝光不足<a href="https://zh.wikipedia.org/wiki/照片">照片</a>中更好的细节。这种方法的一个主要优势是它是一个相当直观的技术并且是<a href="https://zh.wikipedia.org/wiki/可逆">可逆</a>操作，如果已知均衡化<a href="https://zh.wikipedia.org/wiki/函数">函数</a>，那么就可以恢复原始的直方图，并且计算量也不大。这种方法的一个缺点是它对处理的数据不加选择，它可能会增加背景<a href="https://zh.wikipedia.org/wiki/噪声">噪声</a>的对比度并且降低有用<a href="https://zh.wikipedia.org/wiki/信号">信号</a>的对比度。</p>
+<p>&ldquo;我尊重这样的人，他心怀博大，待人宽厚；朝观剑舞，夕临秋水，观剑以励志奋进，<strong><em>读庄以淡化世纷</em></strong>；公而忘私，勤于职守；力求无负与前人，无罪于今人，无愧于后人。&rdquo;</p>
 </blockquote>
 
-<p>至于直方图是如何达到这种效果的，在比较清楚地了解了其背后的原理后再进行讨论。总之，我们要做的是找到一个变换 <span  class="math">\(T(x)\)</span>  使得变换后的<span  class="math">\(T(image)\)</span> 的直方图是一个常函数<span  class="math">\(f(rank) = K\)</span> , <span  class="math">\(\forall\)</span><span  class="math">\(rank\)</span> <span  class="math">\(\in\)</span> <span  class="math">\(RankDomain\)</span></p>
+<h3 id="读-1-1">读§1.1</h3>
 
-<ol start="3">
-<li>如何找到这样的一个变换<span  class="math">\(T(x)\)</span></li>
-</ol>
+<p>这一节联系实际介绍了一些基础概念</p>
 
-<p>根据一些图像处理的知识，变换<span  class="math">\(T(x)\)</span> 需要满足以下一些条件：</p>
+<h5 id="随机-事件">（随机）事件：</h5>
 
-<p>（i）<span  class="math">\(T(x)\)</span>是广义单调增加的。这保证像素之间灰度级的大小关系保持不变。</p>
+<p>（我的常识是）之所以<strong>随机</strong>是因为给出的条件不全，即若给出充足的条件，所有的事件都是可以给出或必然或不可能的判断的。我学概率的期待之一，其实是希望概率论能告诉我这种常识的简单和局限。</p>
 
-<p>下面引入概率论的思想来求这个变换。将像素点<span  class="math">\(i\)</span>的灰度值视为一个随机变量<span  class="math">\(\xi_i\)</span>，</p>
+<h5 id="事件空间">事件空间</h5>
 
-<p><span  class="math">\[\xi_i \coprod  \xi_j ， \forall i\ne j ， i, j \in Image\]</span></p>
+<p>这里有一个小的断言：所有的事件都是$\Omega$ 的子集。同时可以说，所有事件都是由基本事件的运算产生的。这个statement并不在我的常识中，我没有意识到所有可能出现的结果其实是可以预见的。</p>
 
-<p>定义概率<span  class="math">\(P(\xi = k)\)</span> = <span  class="math">\(\frac{n_k}{n}\)</span></p>
+<h5 id="概率">概率：</h5>
 
-<p><span  class="math">\(n_k\)</span> <span  class="math">\(:=\)</span>  灰度为<span  class="math">\(k\)</span>的像素点的个数</p>
+<p>概率的实际意义是衡量一个事件发生可能性大小的数字，他在不同的模型中显然可以不同。（认识到这一点算是一个收获。）在数学的意义上，他是一种”测度“，是推广”积分“时产生的一种”工具“。</p>
 
-<p><span  class="math">\(n:=\)</span>    图像总像素点个数</p>
+<h5 id="频率">频率：</h5>
 
-<hr>
+<p>定义了频率，指出频率和概率有关。指出今后可以证明：在相当广泛的情形下，概率的极限就是概率。</p>
 
-<p>弃更了，google到一篇很清楚的解释，数学也比较严谨<a href="https://www.math.uci.edu/icamp/courses/math77c/demos/hist_eq.pdf">在这里</a></p>
+<p>（<strong><em>我不太懂这里的概率是不是要说明一下是怎么定义的，还是说在“相当广泛的情形下”，概率的定义是唯一的？</em></strong></p>
 
-<p>会搜索是多么重要，<span  class="math">\(Gan\)</span>。</p>
+<h5 id="杂谈">杂谈：</h5>
 
-<p>(提高hugo对markdown数学公式的支持<a href="https://butui.me/post/yet-best-math-formula-support-for-hugo-with-mathjax/">请看这里</a>)</p>
+<p>这本书在定义事件时没有一上来就引入”集合“，而是在定义之后提到这和”集合“密切相关，因此引入了集合来表示事件，我认为这很自然，不像某些书那么突兀。</p>
+
+<p>书中提到复杂概念甲由一个稍简单的概念乙定义，乙由更简单的丙定义，一定会遇到某个定义或概念无法再解释。这并不用慌张，这时就用不太严谨的描述罢了。</p>
+
+<p>很多人讨厌数学<strong>繁多啰嗦</strong>的定义，但仔细分析这些基本的定义，常常能重新形成一些很<strong>底层</strong>的概念。</p>
+
+<p>我正尝试用这种方法重塑三观。</p>
+
+<p><strong>(To be continued……)</strong></p>
 
         </section>
       </div>
@@ -181,7 +177,7 @@
   <div class="container">
     <div class="columns">
       <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
-        Last modified:8 October 2019</div>
+        Last modified:16 October 2019</div>
     </div>
   </div></section><footer class="footer footer-dark">
   <div class="container">
