@@ -117,26 +117,52 @@
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title is-2 section-title">梯子是怎么坚挺的</h1>
+        <h1 class="title is-2 section-title">1.2 &amp; 1.3</h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
         
         <section class="section content has-text-justified">
-          
+          <h3 id="读12">读§1.2</h3>
 
-<h3 id="端口被墙">端口被墙？</h3>
+<p>这一节介绍了古典型概率的一些模型和计算技巧，涉及一些排列组合的知识。由于我读此书的目的不是解题，这一节极略读。</p>
 
-<p>9/30/2019</p>
+<p>首先推广了随机试验，提出<strong><em>n次复合随机试验</em></strong>的概念。需要注意的是，这n次实验是有<strong><em>位置次序</em></strong>的。</p>
 
-<p>8836端口突然上不去了，重启了几次ssserver服务：<a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-使用说明" target="_blank">这样做的</a> 没什么用，然后pip卸了重装，重写了配置文件，新加了8838端口，本计划用作guest端口。结果后来发现8836还是无法连通，反而8838把我带了出去。</p>
+<p>另外，需要注意的是：古典型概率的定义方式，每个基本事件概率的大小相等。</p>
 
-<p>有人说，是端口被墙了，真是神奇。</p>
+<h3 id="读13">读§1.3</h3>
 
-<h3 id="加混淆-改加密">加混淆，改加密</h3>
+<p>这一节介绍了概率的公理化定义✌️</p>
 
-<p>10/3/2019</p>
+<p><strong><em>事件空间</em></strong></p>
 
-<p>端口被封的越来越快，一个端口甚至用不了一天了。<a href="https://www.elietio.xyz/2019/04/shadowsocks-simple-obfs.html" target="_blank">有人说可以试试加个插件</a>，我按照他说的试了试，最终结果倒是很不错，昨天搭好的现在也没被封。配置的难度主要在客户端这里，mac之前的ss没有simple-obfs这个插件，一直连不上，最后下载github上的官方版本改了改才ok。</p>
+<p><span  class="math">\(\cal{F}\)</span>是<span  class="math">\(\Omega\)</span>上的<a href="https://baike.baidu.com/item/σ代数/10934205"><span  class="math">\(\sigma\)</span>-代数</a></p>
+
+<p>这样定义保证了如何折腾（做运算）事件，事件仍然是事件。</p>
+
+<p>事件空间并没有穷尽所有的可能，一方面我们可能并不关心某些事件。</p>
+
+<p>另一方面，有些事件我们研究起来十分困难。</p>
+
+<p><strong><em>概率测度</em></strong></p>
+
+<p><a href="https://baike.baidu.com/item/概率测度">概率测度</a>是定义在<span  class="math">\(\cal{F}\)</span>上的满足三条性质（当然，这三条性质能推出更多的性质）的实值集函数</p>
+
+<p>这样定义或许受到了频率性质的启发。</p>
+
+<p>可以看到，很大范围的“概率”能纳入这个体系中：古典型概率、几何形概率</p>
+
+<p><strong><em>概率的性质</em></strong></p>
+
+<p>1.基本性质（略）</p>
+
+<p>2.连续性：</p>
+
+<p>容易发现，连续性是象在原象的某种<strong><em>极限运动</em></strong>中的某种<strong><em>极限行为</em></strong></p>
+
+<p>概率在事件单调地<strong><em>极限运动</em></strong>时就具有连续性</p>
+
+<p>（<strong><em>To be continued</em></strong></p>
 
         </section>
       </div>
@@ -145,7 +171,7 @@
   <div class="container">
     <div class="columns">
       <div class="column has-text-right is-family-monospace is-centered-tablet-portrait">
-        Last modified:30 September 2019</div>
+        Last modified:22 October 2019</div>
     </div>
   </div></section><footer class="footer footer-dark">
   <div class="container">
