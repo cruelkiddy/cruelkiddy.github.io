@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Mainroad</title>
+    <link>/tags/android/</link>
+    <description>Recent content in Android on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Oct 2019 16:55:52 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VpnService使用指南</title>
+      <link>/post/vpnservice/</link>
+      <pubDate>Thu, 03 Oct 2019 16:55:52 +0800</pubDate>
+      
+      <guid>/post/vpnservice/</guid>
+      <description>什么是VPN Service VPN Service 是安卓提供给开发者的用户级的VPN服务的接口（user level interface），它将复杂的网络配置封装起来，开发者只需考虑和远端服务器的交互。总的来说，VPN Service创建了一个虚拟网卡（TUN），返回给APP一个&amp;rdquo;文件描述符&amp;rdquo;（File descriptor），对文件描述符的读写操作对应数据包的收发。VPN Service的接口工作在IP层，所操作的数据包都是符合IP数据包格式的。
+具体在开发APP时，VPN的连接由两部分构成：client &amp;amp; service
+客户端的VPN连接 1、调用VpnService.prepare()
+初始化方法，停止其他APP创建的VPN连接，并获得使用VpnService类其他方法的权力。如果已有初始化过的VPN连接，将返回null。下面的代码将开启VPN服务绑定到点击操作上。
+public void onClick(View v) { Intent intent = VpnService.prepare(getApplicationContext()); if (intent != null) { startActivityForResult(intent, 0); } else { onActivityResult(0, RESULT_OK, null); } }  初始化完成后VPN服务通过调用startService开启。需要传入一个Intent类型的参数。
+ An intent is an abstract description of an operation to be performed.
+ protected void onActivityResult(int requestCode, int resultCode, Intent data) { if (resultCode == RESULT_OK) { Intent intent = new Intent(this, MyVpnService.</description>
+    </item>
+    
+  </channel>
+</rss>

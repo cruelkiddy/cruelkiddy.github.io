@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sundries on Mainroad</title>
+    <link>/tags/sundries/</link>
+    <description>Recent content in Sundries on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Oct 2019 22:33:25 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/sundries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Untitled</title>
+      <link>/post/untitled/</link>
+      <pubDate>Sat, 12 Oct 2019 22:33:25 +0800</pubDate>
+      
+      <guid>/post/untitled/</guid>
+      <description>恐怕这一篇要写成日记了。
+今天参加了外研社杯英语写作和阅读竞赛的网络初赛。让人惊喜，题目出得十分有趣。写作第一篇议论文直戳我的痛点：如何看待选课人数太少导致的课程取消问题。我可能有些跑题，不知不觉将问题转换成大学是科研机构，应该更重视科研。（看起来没有什么逻辑了）不论如何，洋洋洒洒最终写了500多字。第二题有些像在Quora上答题，挺有代入感的。
+阅读就更有趣了，出现了很多我没见过的观点。一篇文章提到了一种gig economy(零工经济)。公司按照项目组招人，一个项目结项大家散伙，下一个项目重新招人。如果有机会我挺想试试这种模式，很有一种神偷说“干完这票大的就退休”的感觉。😄
+一篇短文提出“生理上营养的缺乏导致抑郁”的观点，我开始怀疑自己是这种情况。
+一篇短文提出朋友是make出来的（可执行文件也是😄）而不是find出来的（可执行文件也是😄）。并且大家都很nice，constant contact就会成为好朋友。这条很有指导意义，混脸熟就是这意思。
+记忆力有点差，想不起来别的了&amp;hellip;
+晚上和妈妈出去散步聊了不少，聊到一些有趣的事：
+心理咨询像是唤醒一些尘封的记忆，我们可能在过去某个时刻做出了某个决定，或者产生了某种行为。随着时间的流逝，我们可能忘记了为什么会产生这种行为，但是行为本身却保留了下来。当这种行为产生了困扰，心理咨询师会试图让你想起或者找到一个最初的原因。
+我们在对很多问题归因的时候会忽视其背后的“概率”因素。很多事情不是板上钉钉的，需要引入“概率”描述的更加清楚。（概率没学好需要补，不只是数学，还能提炼一些哲学思想）
+先别想那么远，影响了美好的当下。
+接上条，我这就买琴。😄
+交朋友没那么难。拿一部分精力放在社交上面。
+想不起来了</description>
+    </item>
+    
+    <item>
+      <title>CleverIDE</title>
+      <link>/post/cleveride/</link>
+      <pubDate>Sun, 06 Oct 2019 22:38:24 +0800</pubDate>
+      
+      <guid>/post/cleveride/</guid>
+      <description>今天跑安卓的第一个例程：ToyVpn。这是一个很有年代感的例子，最近版本的SDK的Sample里已经没了它的踪影。因此环境的配置是一个难题，从gradle开始就出现了版本问题。
+然而 这些问题都极其轻松的得到了解决，得益于十分智能的IDE——AndroidStudio
+AndroidStudio不仅给出错误原因，在原因下面就给出了一键解决的办法。就像过去皇宫里侍奉的太监，只要你点点头，一切都安排好了。
+虽然这对于我这样的初学者十分友善，
+然而 那些吃经验的程序员，还能吃多久呢？
+（怪不得很多大佬去做人工智能了，未来很多工作者真的会被机器取代）
+（怪不得我院变成人工智能学院了😄）</description>
+    </item>
+    
+    <item>
+      <title>活着？</title>
+      <link>/post/perseverance/</link>
+      <pubDate>Fri, 04 Oct 2019 20:31:02 +0800</pubDate>
+      
+      <guid>/post/perseverance/</guid>
+      <description>十一放假四天了，昏昏沉沉的，什么也不想做，感觉不到还活着。
+今天我才意识到事情不太对，开始在网上对照自己的“症状”判断自己得了什么病。胃？肝？心理？最终也没能“确诊”。大概根据中医模糊的理论猜测是这段时间消化能力比较弱，有点”营养不良“的意思，胃不舒服同时影响了心理和睡眠💤。
+有意思的是我在”阴虚“的调养方法里看到”坚持运动“一项。确实啊，我这一个学期运动的次数屈指可数。我就是这么一个冲动的人，我立刻就穿鞋出去跑步了🏃
+跑跑停停，跑到了一条没有车驶过的路上
+耳机里放的是很有节奏感又不吵闹的一段人声轻吟：dililidi （3:00-），脚下的GT-2000反馈回来的软软的感觉，我终于感觉到我还活着了，我越跑越快。</description>
+    </item>
+    
+  </channel>
+</rss>

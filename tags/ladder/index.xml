@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ladder on Mainroad</title>
+    <link>/tags/ladder/</link>
+    <description>Recent content in Ladder on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Sep 2019 23:11:55 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/ladder/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>梯子是怎么坚挺的</title>
+      <link>/post/ladder/</link>
+      <pubDate>Mon, 30 Sep 2019 23:11:55 +0800</pubDate>
+      
+      <guid>/post/ladder/</guid>
+      <description>端口被墙？ 9/30/2019
+8836端口突然上不去了，重启了几次ssserver服务：这样做的 没什么用，然后pip卸了重装，重写了配置文件，新加了8838端口，本计划用作guest端口。结果后来发现8836还是无法连通，反而8838把我带了出去。
+有人说，是端口被墙了，真是神奇。
+加混淆，改加密 10/3/2019
+端口被封的越来越快，一个端口甚至用不了一天了。有人说可以试试加个插件，我按照他说的试了试，最终结果倒是很不错，昨天搭好的现在也没被封。配置的难度主要在客户端这里，mac之前的ss没有simple-obfs这个插件，一直连不上，最后下载github上的官方版本改了改才ok。</description>
+    </item>
+    
+  </channel>
+</rss>

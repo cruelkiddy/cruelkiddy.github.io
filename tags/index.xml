@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mainroad</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Mainroad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Nov 2019 11:33:31 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Math</title>
+      <link>/tags/math/</link>
+      <pubDate>Tue, 19 Nov 2019 11:33:31 +0800</pubDate>
+      
+      <guid>/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sundries</title>
+      <link>/tags/sundries/</link>
+      <pubDate>Sat, 12 Oct 2019 22:33:25 +0800</pubDate>
+      
+      <guid>/tags/sundries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EE Stuff</title>
+      <link>/tags/ee-stuff/</link>
+      <pubDate>Tue, 08 Oct 2019 21:24:50 +0800</pubDate>
+      
+      <guid>/tags/ee-stuff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eat</title>
+      <link>/tags/eat/</link>
+      <pubDate>Mon, 07 Oct 2019 18:58:19 +0800</pubDate>
+      
+      <guid>/tags/eat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>/tags/android/</link>
+      <pubDate>Thu, 03 Oct 2019 16:55:52 +0800</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ladder</title>
+      <link>/tags/ladder/</link>
+      <pubDate>Mon, 30 Sep 2019 23:11:55 +0800</pubDate>
+      
+      <guid>/tags/ladder/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
